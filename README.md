@@ -8,7 +8,7 @@ Streamlit web app that generates a “choir” from an uploaded vocal by sending
 Create .env file and provide AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_REGION.
 
 2. Edit `.env` and fill in at least:
-```toml
+```env
 AWS_ACCESS_KEY_ID=AKIAxxxxxxxxxxxx
 AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AWS_DEFAULT_REGION=us-east-1
