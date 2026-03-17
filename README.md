@@ -59,6 +59,19 @@ docker compose down
 - **Polling**: the app polls S3 until all expected outputs exist (or timeouts).
 - **Mixing**: generated voices are downloaded and mixed locally in the Streamlit container.
 
+## UI actions: Preview vs Generate Choir
+
+After uploading an audio file and selecting voices:
+
+- **Preview**
+  - Uses the **short** preprocessed input (`*_short.wav`)
+  - Intended for quick iteration to hear the arrangement / settings
+  - Produces a preview mixed WAV in the UI player
+- **Generate Choir**
+  - Uses the **full** preprocessed input (`*_full.wav`)
+  - Intended for the final render
+  - Produces a mixed WAV and enables downloads (mixed WAV + optional ZIP of stems)
+
 ## Configuration
 
 Defaults live in `src/config.py`:
